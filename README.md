@@ -1,81 +1,134 @@
-### Hi, Derian here!!! 👋
+<div align="center">
 
+# 👋 Hey, soy Derian Cardenas
 
-<div id="content" align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajRvaDY2MG95Ym84ZWEwdzZhNThsMTF5bHFpaTBnZDJpbG5kdGZkZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2IudUHdI075HL02Pkk/giphy.webp" width="600px" height="400px"/>
-  <h1>Sobre mí</h1>
+### Full Stack Developer · Veracruz, México 🇲🇽
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/derian-alexis-cardenas-mortera-329674171/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DerianCardenas)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cardenasmorteraderin@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-3B82F6?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/DerianCardenas)
+
 </div>
 
-Soy un desarrollador web apasionado con 1 año de experiencia en el diseño y desarrollo de interfaces de usuario intuitivas y responsivas utilizando Vue, JavaScript, CSS y Bootstrap. También tengo experiencia en el desarrollo de aplicaciones backend con PHP y Laravel 10.
+---
 
-<div id="content" align="center">
-  <h2>Experiencia laboral</h2>
+## 🧑‍💻 Sobre mí
+
+Desarrollador Full Stack con enfoque en **backend .NET** y **frontend Vue 3**, con experiencia en sistemas gubernamentales y empresariales de escala real. Graduado de Ingeniería en Sistemas Computacionales en el **Instituto Tecnológico de Veracruz (2023)**, trabajando en la industria desde entonces.
+
+Trabajo en **Linux (Debian 12)** de forma nativa, administro mi propia infraestructura self-hosted y he desarrollado desde módulos de kernel en C hasta ERPs académicos y dashboards financieros.
+
+Integro **vibe coding asistido por IA** en mi flujo de trabajo para acelerar tiempos de entrega y enfocar mi energía en las decisiones que importan: arquitectura, experiencia de usuario y calidad de producto — sin perder profundidad técnica.
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+
+### Frontend
+![Vue.js](https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=flat-square&logo=pinia&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+### Base de datos & DevOps
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+### Lenguajes
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+
+---
+
+## 🚀 Proyectos destacados
+
+### Personales
+
+| Proyecto | Descripción | Stack |
+|---|---|---|
+| [💰 MiFinanza](https://github.com/DerianCardenas/04-DashboardFinanzas) | Dashboard financiero personal con multi-currency, presupuestos y analytics | Vue 3 · .NET 9 · PostgreSQL |
+| [🤖 AI-Agents](https://github.com/DerianCardenas/AI-Agents) | Framework para orquestar un equipo completo de agentes IA especializados | TypeScript · Claude AI · MCP |
+| 🃏 Solitario Klondike | Juego de escritorio para Linux empaquetado como `.deb` con 5 dificultades y 3 temas | Python · Pygame · PyInstaller |
+| 🎮 Driver GameSir-K1 | Módulo de kernel Linux en C para soporte USB con protocolo GIP (Xbox) | C · Linux Kernel · USB HID |
+
+### Profesionales (BePartners · 2023 – Presente)
+
+| Sistema | Cliente | Stack |
+|---|---|---|
+| 🚗 SEMOV — Sistema de Movilidad | Gobierno del Estado de México | Vue 3 · .NET 9 · PostgreSQL Azure · Playwright |
+| 🎓 U3Milenio — ERP Académico | Institución educativa privada | Vue 3 · ASP.NET Core 8 · PostgreSQL · Cypress |
+| 📅 CitasDigitales — Turnera SaaS | Gobierno municipal | Vue 3 · .NET · Tailwind · Google Maps |
+| 🏛️ ComexCompras — Adquisiciones | Senado de la República (LXVI Legislatura) | Vue 3 · Bootstrap 5 · Chart.js |
+| 🏛️ SICSSE — Compras y Almacenes | Secretaría de Educación de Jalisco (todo el estado) | Vue 3 · .NET · PostgreSQL |
+| 📚 Control Escolar SEJ | Secretaría de Educación de Jalisco | Vue 3 · .NET · Chart.js |
+| 🐄 Control de Ganado | Cliente privado | Vue 3 · .NET · MySQL |
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DerianCardenas&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=6366f1&text_color=e8f0fe)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DerianCardenas&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&text_color=e8f0fe)
+
 </div>
 
-### Desarrollador Frontend en [Azit] (Enero 2023 - Actualidad)
-* Diseño y desarrollo de interfaces de usuario con Vue, JavaScript, CSS y Bootstrap.
-* Colaboración con el equipo de desarrollo para implementar soluciones efectivas.
+---
 
-### Desarrollador Backend en [Azit] (Abril 2024 - Actualidad)
-* Desarrollo de aplicaciones backend con PHP y Laravel 10.
+## 🏆 Logros & Certificados
 
-<div align="center" style="display:flex; justify-content:'space-evenly'">
-  <img style="margin-right:'50px;'" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXJ4emJkajVobmE2OWU0OGZmdzJsdXpodmdrcTVya2xpYm9jeG41diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xbLZjyMNQqEpTKjkSm/giphy.webp" width="150"/>
-  <a style="margin-left:'50px;'" href="https://app.daily.dev/deriancardenas">
-    <img src="https://api.daily.dev/devcards/b9974f56873140a5b6de18e3e4d8684a.png?r=gxg" width="190" alt="Derian Alexis Cárdenas Mortera's Dev Card"/>
-  </a>
-</div>
-<div id="content" align="center">
-  <h2>Proyectos destacados</h2>
-</div>
+- 🥇 **Lugar #20 — TECNM Coding Cup 2020** · Programación competitiva por equipos
+- 🎖️ **Participación — TECNM Coding Cup 2019** · Programación competitiva por equipos
+- 💻 **[HackerRank Problem Solving — Basic](https://www.hackerrank.com/certificates/93196b7df634)** · Diciembre 2021
+- 📜 Certificados **CapacitaT** (Fundación Carlos Slim)
+- 🎓 Certificados de cursos **Udemy**
 
-### Sistema de compras estatales de la Secretaría de Jalisco
-* Contribuí en el desarrollo de un sistema de compras estatales para la Secretaría de Jalisco, mejorando la eficiencia y transparencia en los procesos de adquisición.
+---
 
-### Sistema de control escolar de la Secretaría de Educación de Jalisco
-* Participé en el desarrollo de un sistema de control escolar para la Secretaría de Educación de Jalisco, optimizando la gestión y seguimiento de los procesos educativos.
+## 🌐 Comunidad & Tutorías
 
-### Sistema web para el control del proceso de ganado
-* Desarrollé un sistema web para controlar el proceso de ganado, desde la compra y alimentación hasta la venta, mejorando la eficiencia y control del cliente.
+- **Cofundador & Tutor** — CodTI-Web *(Jul 2022 – Dic 2023)*
+  Comunidad universitaria de desarrollo de TI · Cursos de desarrollo web para toda la universidad
 
-<div id="content" align="center">
-  <h2>Experiencia académica</h2>
-</div>
+- **Tutor de Programación** — PALPROG *(Ago 2021 – Dic 2022)*
+  Java y Python para alumnos de semestres iniciales en el ITV
 
-### Asesor de desarrollo web y programación en Java en el Instituto Tecnológico de Veracruz (Febrero 2022 - Diciembre 2023)
-* Impartí cursos de desarrollo web a estudiantes universitarios por 1 año y medio.
+---
 
-### Co-líder y co-fundador de la comunidad CodTI-Web en el Instituto Tecnológico de Veracruz (Febrero 2022 - Diciembre 2023)
-* Organizamos talleres de desarrollo web para estudiantes.
+## ⚡ Patrones y prácticas
 
-<div id="content" align="center">
-  <h2>Habilidades</h2>
-</div>
+```
+✓ Clean Architecture (4 capas)       ✓ CQRS con MediatR
+✓ JWT + RBAC multi-rol               ✓ Firma electrónica FIEL (SAT)
+✓ Testing E2E (Playwright / Cypress) ✓ Multi-tenant con temas dinámicos
+✓ Paginación server-side             ✓ Self-hosting (Nextcloud, Jellyfin)
+✓ Vibe coding asistido por IA        ✓ Orquestación de agentes IA
+```
 
-* Desarrollo frontend con Vue, JavaScript, CSS y Bootstrap.
-* Desarrollo backend con PHP y Laravel 10.
-* Diseño de interfaces de usuario intuitivas y responsivas.
-* Colaboración en equipo y comunicación efectiva.
-  
-<div id="content" align="center">
-  <h2>Aprendiendo:</h2>
-</div>
+---
 
-* Desarrollo frontend con React.
-* Desarrollo backend con Python.
-* Desarrollo de aplicaciones de escritorio con Python.
-* Desarrollo de videojuegos con Unity.
+<div align="center">
 
-## Contacto
+*"La IA es una herramienta, no un atajo."*
 
-<div id="badges" align="center">
-  <a href="https://www.linkedin.com/in/derian-alexis-cardenas-mortera-329674171/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="mailto:cardenasmorteraderian@gmail.com">
-    <img src="https://img.shields.io/badge/Google-red?style=for-the-badge&logo=google&logoColor=white" alt="Google Badge"/>
-  </a>
-  <a href="https://github.com/DerianCardenas">
-    <img src="https://img.shields.io/badge/Github-white?style=for-the-badge&logo=github&logoColor=black" alt="Github Badge"/>
-  </a>
+**¿Hablamos?** → [cardenasmorteraderin@gmail.com](mailto:cardenasmorteraderin@gmail.com)
+
 </div>

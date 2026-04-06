@@ -1,0 +1,26 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos .md privados (excepto README.md)
+*.md
+!README.md
+
+# Datos del portfolio (uso interno)
+portfolio-data.md
+ASSETS-README.md
+
+# Assets pendientes de subir (descomenta si no quieres subir certs todavía)
+# assets/certs/
