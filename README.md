@@ -73,10 +73,10 @@ Integro **vibe coding asistido por IA** en mi flujo de trabajo para acelerar tie
 |---|---|---|
 | 🚗 SEMOV — Sistema de Movilidad | Gobierno del Estado de México | Vue 3 · .NET 9 · PostgreSQL Azure · Playwright |
 | 🎓 U3Milenio — ERP Académico | Institución educativa privada | Vue 3 · ASP.NET Core 8 · PostgreSQL · Cypress |
-| 📅 CitasDigitales — Turnera SaaS | Gobierno municipal | Vue 3 · .NET · Tailwind · Google Maps |
-| 🏛️ ComexCompras — Adquisiciones | Senado de la República (LXVI Legislatura) | Vue 3 · Bootstrap 5 · Chart.js |
-| 🏛️ SICSSE — Compras y Almacenes | Secretaría de Educación de Jalisco (todo el estado) | Vue 3 · .NET · PostgreSQL |
-| 📚 Control Escolar SEJ | Secretaría de Educación de Jalisco | Vue 3 · .NET · Chart.js |
+| 📅 CitasDigitales — Turnera SaaS | Gobierno municipal | Vue 3 · .NET · Tailwind · Google Maps - PostgreSQL |
+| 🏛️ ComexCompras — Adquisiciones | Comex | Vue 3 · Bootstrap 5 · Chart.js - MySQL |
+| 🏛️ SICSSE — Compras y Almacenes | Secretaría de Educación de Jalisco (todo el estado) | Vue 3 · .NET · MySQL |
+| 📚 Control Escolar SEJ | Secretaría de Educación de Jalisco | Vue 3 · .NET · MySQL |
 | 🐄 Control de Ganado | Cliente privado | Vue 3 · .NET · MySQL |
 
 ---
