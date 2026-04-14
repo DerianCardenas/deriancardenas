@@ -52,26 +52,37 @@ const i18nData = {
     "proj-developing": "En desarrollo",
 
     // Projects - MiFinanza
+    "proj-mifinanza-title": "💰 MiFinanza — Dashboard Financiero",
     "proj-mifinanza-desc": "App de finanzas personales completa con frontend en Vue 3 y backend .NET 9. Multi-currency (USD/MXN/EUR/GBP), tarjetas de crédito, MSI, presupuestos, metas de ahorro y dashboard analítico con gráficas por período.",
     // Projects - AI-Agents
+    "proj-aiagents-title": "🤖 AI-Agents — Equipo de desarrollo con IA",
     "proj-aiagents-desc": "Framework para orquestar un equipo completo de agentes IA especializados: PO, Scrum Master, DBA, Backend, Frontend, Tester y Docs. Cada agente tiene rol, herramientas, contratos y memoria compartida entre proyectos.",
     // Projects - Solitario
+    "proj-solitario-title": "🃏 Solitario Klondike — Linux Desktop",
     "proj-solitario-desc": "Juego completo de Solitario Klondike para Linux, empaquetado como <code>.deb</code>. 5 niveles de dificultad, 3 temas visuales intercambiables, drag & drop, undo, autosave en JSON y sistema de temas extensible.",
     // Projects - SEMOV
+    "proj-semov-title": "🚗 SEMOV — Trámites Vehiculares",
     "proj-semov-desc": "Plataforma de trámites vehiculares para el gobierno del Estado de México. Arquitectura Clean con CQRS/MediatR, suite completa de tests E2E con Playwright cubriendo flujos completos de trámite y autenticación OTP.",
     // Projects - U3Milenio
+    "proj-u3milenio-title": "🏫 U3Milenio — ERP Académico",
     "proj-u3milenio-desc": "ERP académico completo para educación superior: inscripciones, calificaciones, horarios, pagos, kardex, generación de PDFs, emails transaccionales y jobs programados. 38 controladores, 72 casos de uso, 14 roles.",
     // Projects - CitasDigitales
+    "proj-citasdigitales-title": "🗓️ CitasDigitales — Gestión de Citas",
     "proj-citasdigitales-desc": "Plataforma SaaS para gestión de citas y turnera digital en oficinas gubernamentales. Temas dinámicos multi-tenant, PDF con QR, Google Maps, booking multi-step, turnera en pantalla y sistema legacy dockerizado.",
     // Projects - ComexCompras
+    "proj-comexcompras-title": "📦 ComexCompras — Gestión de Adquisiciones",
     "proj-comexcompras-desc": "Plataforma de gestión de compras y almacén para el <strong>Senado de la República (LXVI Legislatura)</strong>. Módulos de adquisiciones, activos fijos, proveedores y dashboard ejecutivo con paleta institucional personalizada.",
     // Projects - SICSSE
+    "proj-sicsse-title": "🏛️ SICSSE — Compras y Almacenes SEJ",
     "proj-sicsse-desc": "Sistema Integral de Compras y Almacenes para la <strong>Secretaría de Educación de Jalisco</strong>, abarcando todo el estado. Control de compras, entradas y salidas con flujos completos de aprobación interna por movimiento de bienes.",
     // Projects - ControlEscolar
+    "proj-control-escolar-title": "📚 Control Escolar SEJ",
     "proj-control-escolar-desc": "Sistema para la <strong>Secretaría de Educación de Jalisco</strong>: inscripción, preinscripción, reinscripción, calificaciones, altas y bajas, titulación y reportes para todos los niveles educativos.",
     // Projects - Ganado
+    "proj-ganado-title": "🐄 Sistema de Control de Ganado",
     "proj-ganado-desc": "Plataforma de gestión ganadera con control de ingreso, alimentación, pesaje y ventas. Incluye gestión de usuarios, almacenamiento de información estructurada, de reportes y dashboards interactivos.",
     // Projects - GameSir
+    "proj-gamesir-title": "🎮 Driver Linux para GameSir-K1",
     "proj-gamesir-desc": "Módulo de kernel Linux en C para soporte de controlador USB no reconocido nativamente. Implementación del protocolo GIP (Xbox), handshake completo, ACK de mensajes y mapeo de botones desde paquetes raw.",
 
     // Experience
@@ -186,26 +197,37 @@ const i18nData = {
     "proj-developing": "In development",
 
     // Projects - MiFinanza
+    "proj-mifinanza-title": "💰 MiFinanza — Financial Dashboard",
     "proj-mifinanza-desc": "Complete personal finance app with Vue 3 frontend and .NET 9 backend. Multi-currency (USD/MXN/EUR/GBP), credit cards, installments (MSI), budgets, savings goals, and analytical dashboard with period charts.",
     // Projects - AI-Agents
+    "proj-aiagents-title": "🤖 AI-Agents — AI Development Team",
     "proj-aiagents-desc": "Framework to orchestrate a full team of specialized AI agents: PO, Scrum Master, DBA, Backend, Frontend, Tester, and Docs. Each agent has a role, tools, contracts, and shared memory across projects.",
     // Projects - Solitario
+    "proj-solitario-title": "🃏 Solitaire Klondike — Linux Desktop",
     "proj-solitario-desc": "Full Klondike Solitaire game for Linux, packaged as <code>.deb</code>. 5 difficulty levels, 3 interchangeable visual themes, drag & drop, undo, JSON autosave, and extensible theme system.",
     // Projects - SEMOV
+    "proj-semov-title": "🚗 SEMOV — Vehicle Procedures",
     "proj-semov-desc": "Vehicle procedures platform for the State of Mexico government. Clean Architecture with CQRS/MediatR, full E2E test suite with Playwright covering procedure flows and OTP authentication.",
     // Projects - U3Milenio
+    "proj-u3milenio-title": "🏫 U3Milenio — Academic ERP",
     "proj-u3milenio-desc": "Comprehensive academic ERP for higher education: enrollments, grades, schedules, payments, transcripts, PDF generation, transactional emails, and scheduled jobs. 38 controllers, 72 use cases, 14 roles.",
     // Projects - CitasDigitales
+    "proj-citasdigitales-title": "🗓️ CitasDigitales — Appointment Management",
     "proj-citasdigitales-desc": "SaaS platform for appointment management and digital queueing in government offices. Multi-tenant dynamic themes, PDF with QR, Google Maps, multi-step booking, display queueing, and dockerized legacy system.",
     // Projects - ComexCompras
+    "proj-comexcompras-title": "📦 ComexCompras — Procurement Management",
     "proj-comexcompras-desc": "Procurement and warehouse management platform for the <strong>Senate of the Republic (LXVI Legislature)</strong>. Procurement modules, fixed assets, suppliers, and executive dashboard with customized institutional palette.",
     // Projects - SICSSE
+    "proj-sicsse-title": "🏛️ SICSSE — Purchases and Warehouse SEJ",
     "proj-sicsse-desc": "Integral Procurement and Warehouse System for the <strong>Secretary of Education of Jalisco</strong>, covering the entire state. Control of purchases, entries, and exits with full internal approval flows for asset movements.",
     // Projects - ControlEscolar
+    "proj-control-escolar-title": "📚 School Control SEJ",
     "proj-control-escolar-desc": "System for the <strong>Secretary of Education of Jalisco</strong>: enrollment, pre-enrollment, re-enrollment, grades, registrations/withdrawals, graduation, and reports for all educational levels.",
     // Projects - Ganado
+    "proj-ganado-title": "🐄 Livestock Management System",
     "proj-ganado-desc": "Livestock management platform with entry control, feeding, weighing, and sales. Includes user management, structured information storage, report generation, and interactive dashboards.",
     // Projects - GameSir
+    "proj-gamesir-title": "🎮 Linux Driver for GameSir-K1",
     "proj-gamesir-desc": "Linux kernel module in C for USB controller support not recognized natively. Implementation of the GIP protocol (Xbox), full handshake, message ACK, and button mapping from raw packets.",
 
     // Experience

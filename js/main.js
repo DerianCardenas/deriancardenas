@@ -52,8 +52,7 @@ langBtn.addEventListener('click', () => {
   setLanguage(next);
 });
 
-// Initialize language
-setLanguage(currentLang);
+// setLanguage initialization moved to the end of file to prevent TDZ issues
 
 // =========================================
 // NAV SCROLL
@@ -142,7 +141,7 @@ function typeLoop() {
   setTimeout(typeLoop, delay);
 }
 
-typeLoop();
+// typeLoop() initialization moved to init()
 
 // =========================================
 // FADE IN ON SCROLL
@@ -297,7 +296,26 @@ function initCarousels() {
   });
 }
 
-initCarousels();
+// =========================================
+// INITIALIZATION
+// =========================================
+function init() {
+  // Initialize language preference
+  setLanguage(currentLang);
+  
+  // Initialize carousels
+  initCarousels();
+  
+  // Start typing animation loop
+  typeLoop();
+}
+
+// Run init when everything is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
 
 // =========================================
 // SMOOTH SCROLL FOR ALL ANCHOR LINKS
