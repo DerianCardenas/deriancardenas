@@ -246,6 +246,29 @@ nav.scrolled {
   border-color: var(--primary);
 }
 
+.lang-toggle {
+  padding: 0 10px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: var(--transition);
+  font-family: var(--font);
+}
+
+.lang-toggle:hover {
+  background: var(--surface-2);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
 .nav-cta {
   padding: 8px 18px;
   background: var(--primary);

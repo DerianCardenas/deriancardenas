@@ -30,15 +30,18 @@
     <a href="#hero" class="nav-logo">DC.</a>
 
     <ul class="nav-links">
-      <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Proyectos</a></li>
-      <li><a href="#experience">Experiencia</a></li>
-      <li><a href="#certifications">Certificados</a></li>
-      <li><a href="#contact" class="nav-cta">Contacto</a></li>
+      <li><a href="#about" data-i18n="nav-about">Sobre mí</a></li>
+      <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+      <li><a href="#experience" data-i18n="nav-experience">Experiencia</a></li>
+      <li><a href="#certifications" data-i18n="nav-certifications">Certificados</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav-contact">Contacto</a></li>
     </ul>
 
     <div class="nav-actions">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">
+        ES
+      </button>
       <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
         <span id="theme-icon">☀️</span>
       </button>
@@ -61,7 +64,7 @@
 
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">
+      <div class="hero-badge" data-i18n="hero-badge">
         <span class="dot"></span>
         Disponible para proyectos freelance
       </div>
@@ -72,7 +75,7 @@
         <span class="typed-wrapper"><span id="typed-text"></span><span class="cursor"></span></span>
       </p>
 
-      <p class="hero-bio">
+      <p class="hero-bio" data-i18n="hero-bio">
         Desarrollador Full Stack con base en <strong>Veracruz, México</strong>, enfocado en
         <strong>backend .NET y frontend Vue 3</strong>. Construyo desde APIs gubernamentales con
         firma electrónica hasta ERPs académicos y dashboards financieros. Apasionado por la
@@ -81,16 +84,16 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#projects" class="btn-primary" id="hero-btn-projects">
+        <a href="#projects" class="btn-primary" id="hero-btn-projects" data-i18n="hero-btn-projects">
           Ver proyectos →
         </a>
-        <a href="#contact" class="btn-secondary" id="hero-btn-contact">
+        <a href="#contact" class="btn-secondary" id="hero-btn-contact" data-i18n="hero-btn-contact">
           Contáctame
         </a>
       </div>
 
       <div class="hero-socials">
-        <span>Encuéntrame en</span>
+        <span data-i18n="hero-social-find">Encuéntrame en</span>
         <a href="https://github.com/DerianCardenas" target="_blank" rel="noopener" class="social-link" id="hero-github">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
@@ -112,20 +115,20 @@
     <div class="about-grid">
       <!-- Left: Text -->
       <div class="fade-in">
-        <p class="section-label">Sobre mí</p>
-        <h2 class="section-title">Ingeniero de software<br/>con mentalidad de producto</h2>
+        <p class="section-label" data-i18n="about-label">Sobre mí</p>
+        <h2 class="section-title" data-i18n="about-title">Ingeniero de software<br/>con mentalidad de producto</h2>
         <div class="about-text">
-          <p>
+          <p data-i18n="about-p1">
             Soy <strong>Derian Cardenas</strong>, desarrollador Full Stack con sede en Veracruz, México. 
             Me gradué en <strong>Ingeniería en Sistemas Computacionales</strong> en el Instituto Tecnológico 
             de Veracruz en 2023 y trabajo profesionalmente desde entonces.
           </p>
-          <p>
+          <p data-i18n="about-p2">
             Mi stack principal es <strong>.NET 8/9 en el backend</strong> y <strong>Vue 3 + TypeScript</strong> 
             en el frontend. He participado en sistemas gubernamentales con firma electrónica FIEL, 
             ERPs académicos, plataformas SaaS de citas y dashboards de adquisiciones.
           </p>
-          <p>
+          <p data-i18n="about-p3">
             Trabajo en <strong>Linux (Debian 12) de forma nativa</strong>, administro mi propia 
             infraestructura self-hosted y he desarrollado desde módulos de kernel en C hasta 
             juegos de escritorio con Pygame.
@@ -137,14 +140,14 @@
       <div class="fade-in fade-in-delay-2">
         <div class="vibe-card">
           <div class="vibe-card-icon">⚡</div>
-          <h3>Vibe Coding: IA como aliada de ingeniería</h3>
-          <p>
+          <h3 data-i18n="vibe-title">Vibe Coding: IA como aliada de ingeniería</h3>
+          <p data-i18n="vibe-p1">
             Integro el <strong>vibe coding asistido por IA</strong> en mi flujo de trabajo para 
             acelerar tiempos de entrega y enfocar mi energía en las decisiones que importan: 
             arquitectura, experiencia de usuario y calidad de producto.
           </p>
           <br/>
-          <p>
+          <p data-i18n="vibe-p2">
             Esto <strong>no reemplaza el conocimiento técnico</strong> — lo amplifica. 
             Entiendo cada línea que sale, depuro, refactorizo y tomo decisiones de diseño 
             como ingeniero. La IA es una herramienta, no un atajo.
@@ -154,19 +157,19 @@
         <div class="about-stats">
           <div class="stat-card">
             <span class="stat-number">3+</span>
-            <span class="stat-label">Años de experiencia</span>
+            <span class="stat-label" data-i18n="stat-exp">Años de experiencia</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">5+</span>
-            <span class="stat-label">Proyectos profesionales</span>
+            <span class="stat-label" data-i18n="stat-proj">Proyectos profesionales</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">.NET</span>
-            <span class="stat-label">Backend principal</span>
+            <span class="stat-label" data-i18n="stat-be">Backend principal</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">Vue 3</span>
-            <span class="stat-label">Frontend principal</span>
+            <span class="stat-label" data-i18n="stat-fe">Frontend principal</span>
           </div>
         </div>
       </div>
@@ -180,9 +183,9 @@
 <section id="skills">
   <div class="container">
     <div class="fade-in">
-      <p class="section-label">Tech Stack</p>
-      <h2 class="section-title">Habilidades & Herramientas</h2>
-      <p class="section-desc">
+      <p class="section-label" data-i18n="skills-label">Tech Stack</p>
+      <h2 class="section-title" data-i18n="skills-title">Habilidades & Herramientas</h2>
+      <p class="section-desc" data-i18n="skills-desc">
         Tecnologías que uso en producción, desde arquitectura de APIs hasta módulos de kernel.
       </p>
     </div>
@@ -192,7 +195,7 @@
       <div class="skill-category fade-in fade-in-delay-1">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">⚙️</div>
-          <span class="skill-cat-name">Backend</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-be">Backend</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">ASP.NET Core</span>
@@ -213,7 +216,7 @@
       <div class="skill-category fade-in fade-in-delay-2">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🎨</div>
-          <span class="skill-cat-name">Frontend</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-fe">Frontend</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Vue 3</span>
@@ -236,7 +239,7 @@
       <div class="skill-category fade-in fade-in-delay-3">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🗄️</div>
-          <span class="skill-cat-name">Bases de Datos</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-db">Bases de Datos</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">PostgreSQL</span>
@@ -253,7 +256,7 @@
       <div class="skill-category fade-in fade-in-delay-1">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🛠️</div>
-          <span class="skill-cat-name">DevOps & Infra</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-devops">DevOps & Infra</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Linux (Debian 12)</span>
@@ -271,7 +274,7 @@
       <div class="skill-category fade-in fade-in-delay-2">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">💻</div>
-          <span class="skill-cat-name">Lenguajes</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-languages">Lenguajes</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">JavaScript</span>
@@ -288,7 +291,7 @@
       <div class="skill-category fade-in fade-in-delay-3">
         <div class="skill-cat-header">
           <div class="skill-cat-icon">🤖</div>
-          <span class="skill-cat-name">IA & Herramientas</span>
+          <span class="skill-cat-name" data-i18n="skills-cat-ai">IA & Herramientas</span>
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Claude AI API</span>
@@ -311,13 +314,13 @@
   <div class="container">
     <div class="projects-header fade-in">
       <div>
-        <p class="section-label">Proyectos</p>
-        <h2 class="section-title">Lo que he construido</h2>
+        <p class="section-label" data-i18n="projects-label">Proyectos</p>
+        <h2 class="section-title" data-i18n="projects-title">Lo que he construido</h2>
       </div>
       <div class="project-filters">
-        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
-        <button class="filter-btn" data-filter="personal" id="filter-personal">Personales</button>
-        <button class="filter-btn" data-filter="work" id="filter-work">Profesionales</button>
+        <button class="filter-btn active" data-filter="all" id="filter-all" data-i18n="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="personal" id="filter-personal" data-i18n="filter-personal">Personales</button>
+        <button class="filter-btn" data-filter="work" id="filter-work" data-i18n="filter-work">Profesionales</button>
       </div>
     </div>
 
@@ -328,10 +331,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-personal">Personal</span>
+            <span class="tag-type tag-personal" data-i18n="tag-personal">Personal</span>
           </div>
           <h3 class="project-title">💰 MiFinanza — Dashboard Financiero</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-mifinanza-desc">
             App de finanzas personales completa con frontend en Vue 3 y backend .NET 9.
             Multi-currency (USD/MXN/EUR/GBP), tarjetas de crédito, MSI, presupuestos,
             metas de ahorro y dashboard analítico con gráficas por período.
@@ -367,10 +370,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-personal">Personal</span>
+            <span class="tag-type tag-personal" data-i18n="tag-personal">Personal</span>
           </div>
           <h3 class="project-title">🤖 AI-Agents — Equipo de desarrollo con IA</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-aiagents-desc">
             Framework para orquestar un equipo completo de agentes IA especializados: PO,
             Scrum Master, DBA, Backend, Frontend, Tester y Docs. Cada agente tiene rol, 
             herramientas, contratos y memoria compartida entre proyectos.
@@ -395,10 +398,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-personal">Personal</span>
+            <span class="tag-type tag-personal" data-i18n="tag-personal">Personal</span>
           </div>
           <h3 class="project-title">🃏 Solitario Klondike — Juego de escritorio</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-solitario-desc">
             Juego completo de Solitario Klondike para Linux, empaquetado como <code>.deb</code>.
             5 niveles de dificultad, 3 temas visuales intercambiables, drag &amp; drop, undo,
             autosave en JSON y sistema de temas extensible.
@@ -423,10 +426,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">🚗 SEMOV — Sistema de Movilidad</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-semov-desc">
             Plataforma de trámites vehiculares para el gobierno del Estado de México.
             Arquitectura Clean con CQRS/MediatR, suite completa de tests E2E con Playwright
             cubriendo flujos completos de trámite y autenticación OTP.
@@ -442,7 +445,7 @@
           <span>Playwright</span>
         </div>
         <div class="project-footer">
-          <span class="project-link" style="cursor:default; opacity:0.5;">Proyecto privado</span>
+          <span class="project-link" style="cursor:default; opacity:0.5;" data-i18n="proj-private">Proyecto privado</span>
         </div>
       </article>
 
@@ -451,10 +454,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">🎓 U3Milenio — ERP Académico</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-u3milenio-desc">
             ERP académico completo para educación superior: inscripciones, calificaciones,
             horarios, pagos, kardex, generación de PDFs, emails transaccionales y jobs 
             programados. 38 controladores, 72 casos de uso, 14 roles.
@@ -471,7 +474,7 @@
           <span>Cypress</span>
         </div>
         <div class="project-footer">
-          <span class="project-link" style="cursor:default; opacity:0.5;">Proyecto privado</span>
+          <span class="project-link" style="cursor:default; opacity:0.5;" data-i18n="proj-private">Proyecto privado</span>
         </div>
       </article>
 
@@ -480,10 +483,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">📅 CitasDigitales — SaaS de Citas</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-citasdigitales-desc">
             Plataforma SaaS para gestión de citas y turnera digital en oficinas gubernamentales.
             Temas dinámicos multi-tenant, PDF con QR, Google Maps, booking multi-step, 
             turnera en pantalla y sistema legacy dockerizado.
@@ -499,7 +502,7 @@
           <span>Docker</span>
         </div>
         <div class="project-footer">
-          <span class="project-link" style="cursor:default; opacity:0.5;">Proyecto privado</span>
+          <span class="project-link" style="cursor:default; opacity:0.5;" data-i18n="proj-private">Proyecto privado</span>
         </div>
       </article>
 
@@ -508,10 +511,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">🏛️ ComexCompras — Sistema de Adquisiciones</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-comexcompras-desc">
             Plataforma de gestión de compras y almacén para el <strong>Senado de la República (LXVI Legislatura)</strong>.
             Módulos de adquisiciones, activos fijos, proveedores y dashboard ejecutivo con 
             paleta institucional personalizada.
@@ -526,7 +529,7 @@
           <span>VeeValidate</span>
         </div>
         <div class="project-footer">
-          <span class="project-link" style="cursor:default; opacity:0.5;">Proyecto privado</span>
+          <span class="project-link" style="cursor:default; opacity:0.5;" data-i18n="proj-private">Proyecto privado</span>
         </div>
       </article>
 
@@ -535,10 +538,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">🏛️ SICSSE — Compras y Almacenes SEJ</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-sicsse-desc">
             Sistema Integral de Compras y Almacenes para la <strong>Secretaría de Educación de Jalisco</strong>,
             abarcando todo el estado. Control de compras, entradas y salidas con flujos completos
             de aprobación interna por movimiento de bienes. Similar a ComexCompras pero a escala estatal.
@@ -563,10 +566,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">📚 Control Escolar SEJ</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-control-escolar-desc">
             Sistema para la <strong>Secretaría de Educación de Jalisco</strong>: inscripción, preinscripción,
             reinscripción, calificaciones, altas y bajas, titulación y reportes para todos los niveles
             educativos. Dashboards con gráficas y control de usuarios con roles personalizables.
@@ -591,10 +594,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-work">Profesional</span>
+            <span class="tag-type tag-work" data-i18n="tag-work">Profesional</span>
           </div>
           <h3 class="project-title">🐄 Sistema de Control de Ganado</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-ganado-desc">
             Plataforma de gestión ganadera con control de ingreso, alimentación, pesaje y ventas.
             Incluye gestión de usuarios, almacenamiento de información estructurada, generación de
             reportes y dashboards interactivos para seguimiento del proceso ganadero completo.
@@ -619,10 +622,10 @@
         <div class="proj-carousel-container"></div>
         <div class="project-card-top">
           <div class="project-card-tags">
-            <span class="tag-type tag-personal">Personal</span>
+            <span class="tag-type tag-personal" data-i18n="tag-personal">Personal</span>
           </div>
           <h3 class="project-title">🎮 Driver Linux para GameSir-K1</h3>
-          <p class="project-desc">
+          <p class="project-desc" data-i18n="proj-gamesir-desc">
             Módulo de kernel Linux en C para soporte de controlador USB no reconocido nativamente.
             Implementación del protocolo GIP (Xbox), handshake completo, ACK de mensajes y 
             mapeo de botones desde paquetes raw.
@@ -636,7 +639,7 @@
           <span>insmod</span>
         </div>
         <div class="project-footer">
-          <span class="project-link" style="cursor:default; opacity:0.5;">En desarrollo</span>
+          <span class="project-link" style="cursor:default; opacity:0.5;" data-i18n="proj-developing">En desarrollo</span>
         </div>
       </article>
 
@@ -650,8 +653,8 @@
 <section id="experience">
   <div class="container">
     <div class="fade-in">
-      <p class="section-label">Trayectoria</p>
-      <h2 class="section-title">Experiencia & Educación</h2>
+      <p class="section-label" data-i18n="exp-label">Trayectoria</p>
+      <h2 class="section-title" data-i18n="exp-title">Experiencia & Educación</h2>
     </div>
 
     <!-- Timeline -->
@@ -659,15 +662,15 @@
 
       <div class="timeline-item fade-in fade-in-delay-1">
         <div class="timeline-card">
-          <p class="timeline-period">🏢 Enero 2023 — Actualidad</p>
-          <h3 class="timeline-role">Desarrollador Full Stack</h3>
+          <p class="timeline-period" data-i18n="exp-period-bepartners">🏢 Enero 2023 — Actualidad</p>
+          <h3 class="timeline-role" data-i18n="exp-role-bepartners">Desarrollador Full Stack</h3>
           <p class="timeline-company">BePartners</p>
           <ul class="timeline-desc">
-            <li>Desarrollo de sistemas gubernamentales y empresariales complejos en .NET + Vue 3</li>
-            <li>Implementación de firma electrónica FIEL (SAT), JWT multi-tenant y flujos documentales</li>
-            <li>Arquitectura Clean Architecture con CQRS/MediatR en proyectos de escala real</li>
-            <li>Testing E2E con Playwright y Cypress en flujos críticos de trámites</li>
-            <li>Clientes: gobierno del Estado de México, Senado de la República, instituciones educativas</li>
+            <li data-i18n="exp-desc-bepartners-1">Desarrollo de sistemas gubernamentales y empresariales complejos en .NET + Vue 3</li>
+            <li data-i18n="exp-desc-bepartners-2">Implementación de firma electrónica FIEL (SAT), JWT multi-tenant y flujos documentales</li>
+            <li data-i18n="exp-desc-bepartners-3">Arquitectura Clean Architecture con CQRS/MediatR en proyectos de escala real</li>
+            <li data-i18n="exp-desc-bepartners-4">Testing E2E con Playwright y Cypress en flujos críticos de trámites</li>
+            <li data-i18n="exp-desc-bepartners-5">Clientes: gobierno del Estado de México, Senado de la República, instituciones educativas</li>
           </ul>
         </div>
       </div>
@@ -676,31 +679,31 @@
 
     <!-- Community & Extracurricular -->
     <div class="fade-in" style="margin-top: 3rem;">
-      <p class="section-label">Comunidad & Extracurricular</p>
+      <p class="section-label" data-i18n="comm-label">Comunidad & Extracurricular</p>
     </div>
     <div class="timeline" style="margin-top: 1.5rem;">
 
       <div class="timeline-item fade-in fade-in-delay-1">
         <div class="timeline-card">
-          <p class="timeline-period">🌐 Julio 2022 — Diciembre 2023</p>
-          <h3 class="timeline-role">Cofundador & Tutor de Desarrollo Web</h3>
-          <p class="timeline-company">CodTI-Web — Comunidad de Desarrollo de TI</p>
+          <p class="timeline-period" data-i18n="comm-period-codti">🌐 Julio 2022 — Diciembre 2023</p>
+          <h3 class="timeline-role" data-i18n="comm-role-codti">Cofundador & Tutor de Desarrollo Web</h3>
+          <p class="timeline-company" data-i18n="comm-company-codti">CodTI-Web — Comunidad de Desarrollo de TI</p>
           <ul class="timeline-desc">
-            <li>Cofundé esta comunidad universitaria enfocada en tecnologías de la información</li>
-            <li>Impartí cursos de desarrollo web para toda la comunidad universitaria</li>
-            <li>Diseño de curriculum y materiales didácticos de frontend y backend</li>
+            <li data-i18n="comm-desc-codti-1">Cofundé esta comunidad universitaria enfocada en tecnologías de la información</li>
+            <li data-i18n="comm-desc-codti-2">Impartí cursos de desarrollo web para toda la comunidad universitaria</li>
+            <li data-i18n="comm-desc-codti-3">Diseño de curriculum y materiales didácticos de frontend y backend</li>
           </ul>
         </div>
       </div>
 
       <div class="timeline-item fade-in fade-in-delay-2">
         <div class="timeline-card">
-          <p class="timeline-period">📘 Agosto 2021 — Diciembre 2022</p>
-          <h3 class="timeline-role">Tutor de Programación</h3>
-          <p class="timeline-company">PALPROG — Comunidad universitaria</p>
+          <p class="timeline-period" data-i18n="comm-period-palprog">📘 Agosto 2021 — Diciembre 2022</p>
+          <h3 class="timeline-role" data-i18n="comm-role-palprog">Tutor de Programación</h3>
+          <p class="timeline-company" data-i18n="comm-company-palprog">PALPROG — Comunidad universitaria</p>
           <ul class="timeline-desc">
-            <li>Tutoría en lenguajes Java y Python para alumnos de semestres iniciales e intermedios</li>
-            <li>Apoyo a compañeros universitarios durante mis propios estudios en el ITV</li>
+            <li data-i18n="comm-desc-palprog-1">Tutoría en lenguajes Java y Python para alumnos de semestres iniciales e intermedios</li>
+            <li data-i18n="comm-desc-palprog-2">Apoyo a compañeros universitarios durante mis propios estudios en el ITV</li>
           </ul>
         </div>
       </div>
@@ -709,14 +712,14 @@
 
     <!-- Education -->
     <div class="fade-in" style="margin-top: 3rem;">
-      <p class="section-label">Educación</p>
+      <p class="section-label" data-i18n="edu-label">Educación</p>
     </div>
     <div class="edu-grid">
       <div class="edu-card fade-in fade-in-delay-1">
         <div class="edu-icon">🎓</div>
-        <h3 class="edu-degree">Ingeniería en Sistemas Computacionales</h3>
-        <p class="edu-school">Instituto Tecnológico de Veracruz</p>
-        <p class="edu-year">Generación 2023</p>
+        <h3 class="edu-degree" data-i18n="edu-degree">Ingeniería en Sistemas Computacionales</h3>
+        <p class="edu-school" data-i18n="edu-school">Instituto Tecnológico de Veracruz</p>
+        <p class="edu-year" data-i18n="edu-year">Generación 2023</p>
       </div>
     </div>
   </div>
@@ -728,19 +731,19 @@
 <section id="certifications">
   <div class="container">
     <div class="fade-in">
-      <p class="section-label">Logros & Formación</p>
-      <h2 class="section-title">Certificados & Reconocimientos</h2>
-      <p class="section-desc">Competencias, cursos y reconocimientos a lo largo de mi trayectoria.</p>
+      <p class="section-label" data-i18n="certs-label">Logros & Formación</p>
+      <h2 class="section-title" data-i18n="certs-title">Certificados & Reconocimientos</h2>
+      <p class="section-desc" data-i18n="certs-desc">Competencias, cursos y reconocimientos a lo largo de mi trayectoria.</p>
     </div>
 
     <!-- Reconocimientos de competencia -->
-    <div class="certs-divider fade-in"><span>🏆 Competencias de programación</span></div>
+    <div class="certs-divider fade-in"><span data-i18n="certs-cat-comp">🏆 Competencias de programación</span></div>
     <div class="certs-grid">
 
       <div class="cert-card fade-in fade-in-delay-1">
         <div class="cert-icon">🥇</div>
         <div class="cert-body">
-          <span class="cert-badge-contest">Lugar #20</span>
+          <span class="cert-badge-contest" data-i18n="cert-contest-place">Lugar #20</span>
           <p class="cert-name">TECNM Coding Cup 2020</p>
           <p class="cert-issuer">Tecnológico Nacional de México</p>
           <span class="cert-date">Noviembre 2019</span><br/>
@@ -751,7 +754,7 @@
       <div class="cert-card fade-in fade-in-delay-2">
         <div class="cert-icon">🎖️</div>
         <div class="cert-body">
-          <span class="cert-badge-contest">Participación</span>
+          <span class="cert-badge-contest" data-i18n="cert-contest-participation">Participación</span>
           <p class="cert-name">TECNM Coding Cup 2019</p>
           <p class="cert-issuer">Tecnológico Nacional de México</p>
           <span class="cert-date">Mayo 2019</span><br/>
@@ -766,7 +769,7 @@
           <p class="cert-name">Problem Solving — Basic</p>
           <p class="cert-issuer">HackerRank</p>
           <span class="cert-date">Diciembre 2021</span><br/>
-          <a href="https://www.hackerrank.com/certificates/93196b7df634" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">
+          <a href="https://www.hackerrank.com/certificates/93196b7df634" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;" data-i18n="cert-view">
             Ver certificado ↗
           </a>
         </div>
@@ -775,7 +778,7 @@
     </div>
 
     <!-- CapacitaT / Carlos Slim -->
-    <div class="certs-divider fade-in"><span>📜 CapacitaT — Fundación Carlos Slim</span></div>
+    <div class="certs-divider fade-in"><span data-i18n="certs-cat-capacitat">📜 CapacitaT — Fundación Carlos Slim</span></div>
     <div class="certs-grid" id="capacitat-certs">
 
       <div class="cert-card fade-in fade-in-delay-1">
@@ -784,7 +787,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Comunicación por Videollamadas</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Comunicaci%C3%B3n%20por%20Videollamadas.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Comunicaci%C3%B3n%20por%20Videollamadas.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -794,7 +797,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Conexión a Internet en el Hogar</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Conexi%C3%B3n%20a%20Internet%20en%20el%20hogar.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Conexi%C3%B3n%20a%20Internet%20en%20el%20hogar.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -804,7 +807,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Curador de Datos</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Curador%20de%20Datos.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20Curador%20de%20Datos.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -814,7 +817,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Técnico en Informática</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Inform%C3%A1tica.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Inform%C3%A1tica.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -824,7 +827,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Técnico en Finder</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Finder.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Finder.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -834,7 +837,7 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Técnico en Redes IP</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Redes%20IP.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Redes%20IP.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -844,14 +847,14 @@
           <span class="cert-badge-platform">CapacitaT</span>
           <p class="cert-name">Técnico en Seguridad Informática Perimetral</p>
           <p class="cert-issuer">Fundación Carlos Slim</p>
-          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Seguridad%20Inform%C3%A1tica%20Perimetral.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/capacitat/capacitat-Certificado%20Capacitate%20-%20T%C3%A9cnico%20en%20Seguridad%20Inform%C3%A1tica%20Perimetral.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
     </div>
 
     <!-- Udemy -->
-    <div class="certs-divider fade-in"><span>🎓 Cursos Udemy</span></div>
+    <div class="certs-divider fade-in"><span data-i18n="certs-cat-udemy">🎓 Cursos Udemy</span></div>
     <div class="certs-grid" id="udemy-certs">
 
       <div class="cert-card fade-in fade-in-delay-1">
@@ -860,7 +863,7 @@
           <span class="cert-badge-platform">Udemy</span>
           <p class="cert-name">Master ASP.NET MVC</p>
           <p class="cert-issuer">Udemy</p>
-          <a href="assets/certs/udemy/Curso%20-%20Master%20ASP.NET%20MVC.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/udemy/Curso%20-%20Master%20ASP.NET%20MVC.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -870,7 +873,7 @@
           <span class="cert-badge-platform">Udemy</span>
           <p class="cert-name">PHP, SQL, POO, MVC & Laravel</p>
           <p class="cert-issuer">Udemy</p>
-          <a href="assets/certs/udemy/Curso%20-%20PHPSQLPOOMVCLaravel%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/udemy/Curso%20-%20PHPSQLPOOMVCLaravel%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -880,7 +883,7 @@
           <span class="cert-badge-platform">Udemy</span>
           <p class="cert-name">Quasar Framework</p>
           <p class="cert-issuer">Udemy</p>
-          <a href="assets/certs/udemy/Curso%20-%20Quasar%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/udemy/Curso%20-%20Quasar%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
@@ -890,24 +893,24 @@
           <span class="cert-badge-platform">Udemy</span>
           <p class="cert-name">Vue.js 3 MEVN Stack</p>
           <p class="cert-issuer">Udemy</p>
-          <a href="assets/certs/udemy/Curso%20-%20Vuejs3%20MEVN%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;">Ver certificado ↗</a>
+          <a href="assets/certs/udemy/Curso%20-%20Vuejs3%20MEVN%20Derian.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;"data-i18n="cert-view">Ver certificado ↗</a>
         </div>
       </div>
 
     </div>
 
     <!-- Certificado de Egreso -->
-    <div class="certs-divider fade-in"><span>🎓 Formación académica</span></div>
+    <div class="certs-divider fade-in"><span data-i18n="certs-cat-edu">🎓 Formación académica</span></div>
     <div class="certs-grid">
       <div class="cert-card fade-in fade-in-delay-1">
         <div class="cert-icon">🏛️</div>
         <div class="cert-body">
           <span class="cert-badge-platform">ITV</span>
-          <p class="cert-name">Certificado de Egreso</p>
+          <p class="cert-name" data-i18n="cert-egreso-name">Certificado de Egreso</p>
           <p class="cert-issuer">Instituto Tecnológico de Veracruz</p>
-          <span class="cert-date">Generación 2023</span><br/>
+          <span class="cert-date" data-i18n="edu-year">Generación 2023</span><br/>
           <a href="assets/certs/egreso.pdf" target="_blank" rel="noopener" class="cert-link" style="margin-top:0.5rem;" id="cert-egreso-link">
-            Ver certificado ↗
+            data-i18n="cert-view"
           </a>
         </div>
       </div>
@@ -923,9 +926,9 @@
   <div class="contact-orb"></div>
   <div class="container">
     <div class="contact-inner fade-in">
-      <p class="section-label">Contacto</p>
-      <h2 class="section-title">¿Hablamos?</h2>
-      <p class="section-desc">
+      <p class="section-label" data-i18n="contact-label">Contacto</p>
+      <h2 class="section-title" data-i18n="contact-title">¿Hablamos?</h2>
+      <p class="section-desc" data-i18n="contact-desc">
         Estoy disponible para proyectos freelance, colaboraciones o simplemente para
         charlar sobre tecnología. ¡No dudes en escribirme!
       </p>
@@ -953,9 +956,10 @@
      FOOTER
      ========================================= -->
 <footer>
-  <p>Diseñado y construido por <span>Derian Cardenas</span> · Veracruz, México · 2025</p>
+  <p data-i18n="footer-text">Diseñado y construido por <span>Derian Cardenas</span> · Veracruz, México · 2025</p>
 </footer>
 
+<script src="js/translations.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

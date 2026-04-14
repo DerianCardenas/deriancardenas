@@ -22,6 +22,40 @@ function updateThemeIcon(theme) {
 }
 
 // =========================================
+// LANGUAGE TOGGLE (i18n)
+// =========================================
+const langBtn = document.getElementById('lang-toggle');
+let currentLang = localStorage.getItem('lang') || (navigator.language.startsWith('en') ? 'en' : 'es');
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  document.documentElement.setAttribute('lang', lang);
+  
+  // Update button text
+  langBtn.textContent = lang.toUpperCase();
+
+  // Update all elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18nData[lang][key]) {
+      el.innerHTML = i18nData[lang][key];
+    }
+  });
+
+  // Update typing animation roles
+  updateRoles(lang);
+}
+
+langBtn.addEventListener('click', () => {
+  const next = currentLang === 'es' ? 'en' : 'es';
+  setLanguage(next);
+});
+
+// Initialize language
+setLanguage(currentLang);
+
+// =========================================
 // NAV SCROLL
 // =========================================
 const nav = document.querySelector('nav');
@@ -67,13 +101,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // =========================================
 // TYPING ANIMATION
 // =========================================
-const roles = [
-  'Desarrollador Full Stack',
-  'Ingeniero de Software',
-  'Product Owner',
-  'Vue 3 + .NET Enthusiast',
-  'Linux & Self-Hosting Nerd',
-];
+let roles = [];
+
+function updateRoles(lang) {
+  roles = [
+    i18nData[lang]['role-1'],
+    i18nData[lang]['role-2'],
+    i18nData[lang]['role-3'],
+    i18nData[lang]['role-4'],
+    i18nData[lang]['role-5'],
+  ];
+  // Reset if we are out of bounds after language switch
+  if (roleIndex >= roles.length) roleIndex = 0;
+}
 
 let roleIndex = 0;
 let charIndex = 0;
