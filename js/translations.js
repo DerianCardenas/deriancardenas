@@ -60,6 +60,9 @@ const i18nData = {
     // Projects - Solitario
     "proj-solitario-title": "🃏 Solitario Klondike — Linux Desktop",
     "proj-solitario-desc": "Juego completo de Solitario Klondike para Linux, empaquetado como <code>.deb</code>. 5 niveles de dificultad, 3 temas visuales intercambiables, drag & drop, undo, autosave en JSON y sistema de temas extensible.",
+    // Projects - MangaReader
+    "proj-mangareader-title": "📖 MangaReader — Lector Web",
+    "proj-mangareader-desc": "Plataforma de lectura de manga minimalista y rápida. Diseñada para ofrecer una experiencia fluida, optimizada para dispositivos móviles y alojada en Cloudflare Pages.",
     // Projects - SEMOV
     "proj-semov-title": "🚗 SEMOV — Trámites Vehiculares",
     "proj-semov-desc": "Plataforma de trámites vehiculares para el gobierno del Estado de México. Arquitectura Clean con CQRS/MediatR, suite completa de tests E2E con Playwright cubriendo flujos completos de trámite y autenticación OTP.",
@@ -205,6 +208,9 @@ const i18nData = {
     // Projects - Solitario
     "proj-solitario-title": "🃏 Solitaire Klondike — Linux Desktop",
     "proj-solitario-desc": "Full Klondike Solitaire game for Linux, packaged as <code>.deb</code>. 5 difficulty levels, 3 interchangeable visual themes, drag & drop, undo, JSON autosave, and extensible theme system.",
+    // Projects - MangaReader
+    "proj-mangareader-title": "📖 MangaReader — Web Reader",
+    "proj-mangareader-desc": "Minimalist and fast manga reading platform. Designed to provide a smooth experience, optimized for mobile devices, and hosted on Cloudflare Pages.",
     // Projects - SEMOV
     "proj-semov-title": "🚗 SEMOV — Vehicle Procedures",
     "proj-semov-desc": "Vehicle procedures platform for the State of Mexico government. Clean Architecture with CQRS/MediatR, full E2E test suite with Playwright covering procedure flows and OTP authentication.",

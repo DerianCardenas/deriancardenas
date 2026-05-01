@@ -196,6 +196,7 @@ const PROJECT_IMAGES = {
   'mifinanza':           [],   // Ej: ['assets/projects/mifinanza/1.png', 'assets/projects/mifinanza/2.png']
   'ai-agents':           [],
   'solitario':           [],
+  'mangareader':         [],
   'semov':               [],
   'u3milenio':           [],
   'citasdigitales':      [],
