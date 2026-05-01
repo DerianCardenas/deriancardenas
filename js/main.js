@@ -200,6 +200,7 @@ const PROJECT_IMAGES = {
   'semov':               [],
   'u3milenio':           [],
   'citasdigitales':      [],
+  'cod':                 [],
   'comexcompras':        [],
   'sicsse':              [],
   'control-escolar-sej': [],

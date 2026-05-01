@@ -72,6 +72,9 @@ const i18nData = {
     // Projects - CitasDigitales
     "proj-citasdigitales-title": "🗓️ CitasDigitales — Gestión de Citas",
     "proj-citasdigitales-desc": "Plataforma SaaS para gestión de citas y turnera digital en oficinas gubernamentales. Temas dinámicos multi-tenant, PDF con QR, Google Maps, booking multi-step, turnera en pantalla y sistema legacy dockerizado.",
+    // Projects - COD
+    "proj-cod-title": "✉️ COD — Comunicaciones Oficiales Digitales",
+    "proj-cod-desc": "Plataforma empresarial de comunicaciones internas. Soporta multitenancy, flujos de documentos y firmas electrónicas. Desarrollado con una arquitectura orientada a servicios usando Vue 3 y .NET.",
     // Projects - ComexCompras
     "proj-comexcompras-title": "📦 ComexCompras — Gestión de Adquisiciones",
     "proj-comexcompras-desc": "Plataforma de gestión de compras y almacén para el <strong>Senado de la República (LXVI Legislatura)</strong>. Módulos de adquisiciones, activos fijos, proveedores y dashboard ejecutivo con paleta institucional personalizada.",
@@ -220,6 +223,9 @@ const i18nData = {
     // Projects - CitasDigitales
     "proj-citasdigitales-title": "🗓️ CitasDigitales — Appointment Management",
     "proj-citasdigitales-desc": "SaaS platform for appointment management and digital queueing in government offices. Multi-tenant dynamic themes, PDF with QR, Google Maps, multi-step booking, display queueing, and dockerized legacy system.",
+    // Projects - COD
+    "proj-cod-title": "✉️ COD — Digital Official Communications",
+    "proj-cod-desc": "Enterprise internal communications platform. Features multi-tenancy, document workflows, and electronic signatures. Built with a service-oriented architecture using Vue 3 and .NET.",
     // Projects - ComexCompras
     "proj-comexcompras-title": "📦 ComexCompras — Procurement Management",
     "proj-comexcompras-desc": "Procurement and warehouse management platform for the <strong>Senate of the Republic (LXVI Legislature)</strong>. Procurement modules, fixed assets, suppliers, and executive dashboard with customized institutional palette.",
