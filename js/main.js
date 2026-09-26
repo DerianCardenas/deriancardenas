@@ -327,6 +327,20 @@ function openProjectCase(card, trigger) {
 
 document.getElementById('case-close').addEventListener('click', () => projectDialog.close());
 projectDialog.addEventListener('close', () => caseTrigger?.focus({ preventScroll: true }));
+projectDialog.addEventListener('keydown', event => {
+  if (event.key !== 'Tab') return;
+  const controls = [...projectDialog.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')]
+    .filter(element => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length);
+  const first = controls[0];
+  const last = controls[controls.length - 1];
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  }
+});
 projectDialog.addEventListener('click', event => {
   const rect = projectDialog.getBoundingClientRect();
   if (event.target === projectDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) projectDialog.close();
