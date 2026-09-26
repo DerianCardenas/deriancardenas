@@ -193,19 +193,21 @@ filterBtns.forEach(btn => {
 // Formatos soportados: .png, .jpg, .jpeg, .webp
 // =========================================
 const PROJECT_IMAGES = {
-  'mifinanza':           [],   // Ej: ['assets/projects/mifinanza/1.png', 'assets/projects/mifinanza/2.png']
-  'ai-agents':           [],
-  'solitario':           [],
-  'mangareader':         [],
-  'semov':               [],
-  'u3milenio':           [],
-  'citasdigitales':      [],
+  'dsignr':              [],
+  'sicrop':              [],
   'cod':                 [],
-  'comexcompras':        [],
+  'u3m':                 [],
+  'semov':               [],
   'sicsse':              [],
   'control-escolar-sej': [],
   'ganado':              [],
+  'mifinanza':           [],
+  'ai-agents':           [],
+  'solitario':           [],
+  'mangareader':         [],
   'gamesir':             [],
+  'citasdigitales':      [],
+  'comexcompras':        [],
 };
 
 function buildCarousel(images) {
