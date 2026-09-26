@@ -788,6 +788,28 @@ nav.scrolled {
   border: 1px solid rgba(14, 165, 233, 0.3);
 }
 
+.tag-featured {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.project-summary-box {
+  background: var(--surface-2);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.project-desc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .project-title {
   font-size: 1.15rem;
   font-weight: 700;
