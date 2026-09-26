@@ -5,7 +5,7 @@ const html = document.documentElement;
 const themeBtn = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
 html.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
@@ -18,7 +18,7 @@ themeBtn.addEventListener('click', () => {
 });
 
 function updateThemeIcon(theme) {
-  themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  themeIcon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
 }
 
 // =========================================
@@ -43,8 +43,7 @@ function setLanguage(lang) {
     }
   });
 
-  // Update typing animation roles
-  updateRoles(lang);
+
 }
 
 langBtn.addEventListener('click', () => {
@@ -52,7 +51,7 @@ langBtn.addEventListener('click', () => {
   setLanguage(next);
 });
 
-// setLanguage initialization moved to the end of file to prevent TDZ issues
+// Apply translations after initialization.
 
 // =========================================
 // NAV SCROLL
@@ -90,58 +89,16 @@ const hamburger = document.getElementById('hamburger');
 const navLinksContainer = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
-  navLinksContainer.classList.toggle('open');
+  const open = navLinksContainer.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', String(open));
 });
 
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinksContainer.classList.remove('open'));
+  link.addEventListener('click', () => {
+    navLinksContainer.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
 });
-
-// =========================================
-// TYPING ANIMATION
-// =========================================
-let roles = [];
-
-function updateRoles(lang) {
-  roles = [
-    i18nData[lang]['role-1'],
-    i18nData[lang]['role-2'],
-    i18nData[lang]['role-3'],
-    i18nData[lang]['role-4'],
-    i18nData[lang]['role-5'],
-  ];
-  // Reset if we are out of bounds after language switch
-  if (roleIndex >= roles.length) roleIndex = 0;
-}
-
-let roleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-const typedEl = document.getElementById('typed-text');
-
-function typeLoop() {
-  const current = roles[roleIndex];
-  if (isDeleting) {
-    typedEl.textContent = current.slice(0, --charIndex);
-  } else {
-    typedEl.textContent = current.slice(0, ++charIndex);
-  }
-
-  let delay = isDeleting ? 50 : 90;
-
-  if (!isDeleting && charIndex === current.length) {
-    delay = 2200;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    roleIndex = (roleIndex + 1) % roles.length;
-    delay = 400;
-  }
-
-  setTimeout(typeLoop, delay);
-}
-
-// typeLoop() initialization moved to init()
 
 // =========================================
 // FADE IN ON SCROLL
@@ -166,8 +123,10 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
 filterBtns.forEach(btn => {
+  btn.setAttribute('aria-pressed', String(btn.classList.contains('active')));
   btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
+    filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+    btn.setAttribute('aria-pressed', 'true');
     btn.classList.add('active');
 
     const filter = btn.dataset.filter;
@@ -187,7 +146,7 @@ filterBtns.forEach(btn => {
 // =========================================
 // PROJECT IMAGE CAROUSELS
 // =========================================
-// 👇 Agrega aquí las rutas de las imágenes de cada proyecto.
+// Agrega aquí las rutas de las imágenes de cada proyecto.
 // Coloca los archivos en assets/projects/<slug>/ y lista los nombres aquí.
 // Si una lista está vacía [], el carrusel NO se mostrará en esa card.
 // Formatos soportados: .png, .jpg, .jpeg, .webp
@@ -300,18 +259,91 @@ function initCarousels() {
   });
 }
 
+// Full project cases progressively enhance the native HTML disclosures.
+const projectDialog = document.getElementById('project-dialog');
+const caseContent = document.getElementById('case-content');
+let caseTrigger = null;
+
+function initProjectCases() {
+  if (typeof projectDialog.showModal !== 'function') return;
+  projectCards.forEach(card => {
+    const details = card.querySelector('.project-details');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'case-open';
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.innerHTML = '<span data-i18n="project-details">Leer el caso completo</span><span class="material-symbols-outlined" aria-hidden="true">open_in_full</span>';
+    details.after(button);
+    details.hidden = true;
+    button.addEventListener('click', () => openProjectCase(card, button));
+  });
+}
+
+function openProjectCase(card, trigger) {
+  caseTrigger = trigger;
+  caseContent.replaceChildren();
+  const title = document.createElement('h2');
+  title.id = 'case-title';
+  title.textContent = card.querySelector('.project-title').textContent;
+  caseContent.append(title, card.querySelector('.project-summary-box').cloneNode(true), card.querySelector('.project-context').cloneNode(true));
+
+  // Convert the original complete contributions into readable headings and lists.
+  const source = card.querySelector('.project-desc').innerHTML;
+  source.split(/<br\s*\/?>(?:\s*<br\s*\/?>)+/i).forEach(block => {
+    const template = document.createElement('template');
+    template.innerHTML = block.trim();
+    const heading = template.content.firstElementChild;
+    if (heading?.tagName === 'STRONG') {
+      const h3 = document.createElement('h3');
+      h3.innerHTML = heading.innerHTML;
+      caseContent.append(h3);
+      heading.remove();
+    }
+    const remainder = document.createElement('div');
+    remainder.append(template.content);
+    const lines = remainder.innerHTML.split(/<br\s*\/?>/i).map(line => line.trim()).filter(Boolean);
+    let list = null;
+    lines.forEach(line => {
+      if (line.startsWith('•')) {
+        if (!list) { list = document.createElement('ul'); caseContent.append(list); }
+        const item = document.createElement('li');
+        item.innerHTML = line.replace(/^•\s*/, '');
+        list.append(item);
+      } else {
+        list = null;
+        const paragraph = document.createElement('p');
+        paragraph.innerHTML = line;
+        caseContent.append(paragraph);
+      }
+    });
+  });
+  const stackHeading = document.createElement('h3');
+  stackHeading.textContent = i18nData[currentLang]['case-tech'];
+  caseContent.append(stackHeading, card.querySelector('.project-tech').cloneNode(true), card.querySelector('.project-footer').cloneNode(true));
+  projectDialog.showModal();
+  projectDialog.scrollTop = 0;
+  document.getElementById('case-close').focus({ preventScroll: true });
+}
+
+document.getElementById('case-close').addEventListener('click', () => projectDialog.close());
+projectDialog.addEventListener('close', () => caseTrigger?.focus({ preventScroll: true }));
+projectDialog.addEventListener('click', event => {
+  const rect = projectDialog.getBoundingClientRect();
+  if (event.target === projectDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) projectDialog.close();
+});
+
 // =========================================
 // INITIALIZATION
 // =========================================
 function init() {
+  initProjectCases();
   // Initialize language preference
   setLanguage(currentLang);
   
   // Initialize carousels
   initCarousels();
   
-  // Start typing animation loop
-  typeLoop();
+
 }
 
 // Run init when everything is ready
@@ -328,6 +360,14 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    if (target) target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   });
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navLinksContainer.classList.contains('open')) {
+    navLinksContainer.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.focus();
+  }
 });

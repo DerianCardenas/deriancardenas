@@ -14,9 +14,10 @@ desktop.ini
 *.log
 npm-debug.log*
 
-# Archivos .md privados (excepto README.md)
+# Archivos .md privados (excepto documentación del repositorio)
 *.md
 !README.md
+!AGENTS.md
 
 # Datos del portfolio (uso interno)
 portfolio-data.md
